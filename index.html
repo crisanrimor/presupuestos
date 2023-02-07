@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <main class="presupuesto">
+        <section class="presupuesto__container">
+            <div class="presupuesto__saldo">
+                <i class='bx bx-dollar-circle presupuesto__icon'></i>
+                <h1 class="presupuesto__title">Presupuesto disponible</h1>
+                <p class="presupuesto__disponible"></p>
+
+                <div class="presupuesto__ingresos">
+                    <p class="presupuesto__text">Ingresos:</p>
+                    <div class="presupuesto__number">
+                        <p class="presupuesto__money"></p>
+                    </div>
+                </div>
+
+                <div class="presupuesto__egresos">
+                    <p class="presupuesto__text">Egresos:</p>
+                    <div class="presupuesto__number">
+                        <p class="presupuesto__money"></p>
+                        <p class="presupuesto__percent"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="presupuesto__agregar">
+                <form id="formulario" class="presupuesto__formulario">
+                    <select class="presupuesto__select">
+                        <option value="ingreso">Ingreso</option>
+                        <option value="egreso">Egreso</option>
+                    </select>
+                    <input type="text" class="presupuesto__input" placeholder="Ingresa Descripcion">
+                    <input type="number" class="presupuesto__input" placeholder="Ingresa Valor" step="any">
+                    <button class="presupuesto__cta"><i class='bx bx-check' ></i></button>
+                </form>
+            </div>
+
+            <div class="presupuesto__historial">
+                <h2 class="presupuesto__history">Historial</h2>
+
+                <div class="presupuesto__tablas">
+                    <table class="presupuesto__tbingresos">
+                        <thead>
+                            <tr class="presupuesto__thingreso">
+                                <th colspan="5">Ingresos</th>
+                            </tr>
+                            <tr class="presupuesto__tr">
+                                <th class="presupuesto__td">ID</th>
+                                <th class="presupuesto__td">Descripción</th>
+                                <th class="presupuesto__td">Valor</th>
+                                <th class="presupuesto__td">Fecha</th>
+                                <th class="presupuesto__td">Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody class="presupuesto__tbody">
+
+                        </tbody>
+                    </table>
+
+                    <table class="presupuesto__tbegresos">
+                        <thead>
+                            <tr class="presupuesto__thegreso">
+                                <th colspan="5">Egresos</th>
+                            </tr>
+                            <tr class="presupuesto__tr">
+                                <th class="presupuesto__td">ID</th>
+                                <th class="presupuesto__td">Descripción</th>
+                                <th class="presupuesto__td">Valor</th>
+                                <th class="presupuesto__td">Fecha</th>
+                                <th class="presupuesto__td">Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody class="presupuesto__tbody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/Dato.js"></script>
+    <script src="js/Ingreso.js"></script>
+    <script src="js/Egreso.js"></script>
+    <script src="js/app.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

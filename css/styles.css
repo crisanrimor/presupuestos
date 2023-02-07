@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.presupuesto{
+    display: flex;
+    min-height: 100vh;
+    background-color: steelblue;
+}
+
+.presupuesto__container{
+    width: 90%;
+    max-width: 75rem;
+    margin: 3.75em auto;
+    background-color: #fff;
+    border-radius: 1.25rem;
+    padding: 1.875em;
+}
+
+.presupuesto__saldo{
+    max-width: 25rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    border-radius: 0.3125rem;
+    padding: 1.875em;
+    gap: 1em;
+}
+
+.presupuesto__icon{
+    font-size: 3rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    background-color: #1E4769;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.presupuesto__title{
+    font-weight: 400;
+    text-align: center;
+}
+
+.presupuesto__disponible{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.presupuesto__ingresos{
+    display: flex;
+    align-items: center;
+    background-color: #4682B4;
+    padding: 0.3125em;
+    color: #fff;
+}
+
+.presupuesto__text{
+    font-weight: 600;
+}
+
+.presupuesto__number{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625em;
+}
+
+.presupuesto__egresos{
+    display: flex;
+    align-items: center;
+    background-color: #dc143c;
+    padding: 0.3125em;
+    color: #fff;
+}
+
+.presupuesto__percent{
+    background-color: #ce4d67;
+    font-size: 12px;
+    padding: 0.3125rem;
+    border-radius: 5px;
+}
+
+.presupuesto__agregar{
+    max-width: 37.5rem;
+    margin: 1.875em auto 0;
+}
+
+.presupuesto__formulario{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.presupuesto__select{
+    padding: 0.3125em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.presupuesto__input{
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    flex: 1;
+}
+
+.presupuesto__cta{
+    background-color: #1E4769;
+    color: #fff;
+    border: none;
+    padding: 0 0.625em;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.disabled{
+    pointer-events: none;
+}
+
+.presupuesto__save{
+    background-color: seagreen;
+    color: #fff;
+    border: none;
+    padding: 0 0.625em;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.presupuesto__error{
+    background-color: crimson;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.presupuesto__historial{
+    margin-top: 1.875em;
+}
+
+.presupuesto__history{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 0.625em;
+}
+
+.presupuesto__tablas{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.presupuesto__tbingresos,
+.presupuesto__tbegresos{
+    width: 48%;
+    border-collapse: collapse;
+}
+
+.presupuesto__thingreso,
+.presupuesto__thegreso{
+    background-color: #1E4769;
+    color: #fff;
+}
+
+.presupuesto__tr{
+    text-align: left;
+}
+
+.presupuesto__td{
+    padding: 0.3125em;
+}
+
+.presupuesto__ctaedit{
+    font-size: 1.4rem;
+    color: darkorange;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.presupuesto__ctaelim{
+    font-size: 1.4rem;
+    color: crimson;
+    cursor: pointer;
+    margin-right: 10px;
+}
